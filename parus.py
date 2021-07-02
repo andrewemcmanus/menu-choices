@@ -11,8 +11,14 @@ prices = {
   "mozzarella sticks": 4.20,
   "sampler plate": 5.80
   }
-# find a way to keep keys attached to values
-class Solution(object):
+
+# print("Please enter the filename  - or URL? - of the menu you want to use:")
+# your menu = str(input())
+print("Please enter your target price:")
+yourprice = float(input())
+
+# find a way to keep keys attached to values so that keys can appear in output!
+class Order(object):
    def combinationSum(self, menu, to_spend):
       dishes = []
       unique = {}
@@ -37,19 +43,17 @@ class Solution(object):
          current.append(menu[x])
          self.solve(menu, to_spend - menu[x], dishes, unique, i, current)
          current.pop(len(current) - 1)
-ob1 = Solution()
-values = list(prices.values())
-keys = list(prices.keys())
-yourprice = 15.05
-order = ob1.combinationSum(values, yourprice)
+ord = Order()
+# values = list(prices.values())
+# keys = list(prices.keys())
+order = ord.combinationSum(prices.values(), yourprice)
 if order == []:
     print("There's no combination of dishes that matches your target price.")
 else:
-    orderlist = prices
+    # orderlist = prices
     # for i in order:
     #     if order[i] not in list(orderlist.values()):
-
-    print(order)
+    print(order[0])
     # orderlist = []
     # for x in values:
     #     if values[x] in order:
