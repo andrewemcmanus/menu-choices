@@ -13,7 +13,7 @@ with open(menu) as json_file:
 print("Please enter your target price:")
 yourprice = float(input())
 
-# find a way to keep keys attached to values so that keys can appear in output!
+
 class Order(object):
    def combinationSum(self, menu, to_spend):
       dishes = []
@@ -55,4 +55,4 @@ else:
             idx = menuprices.index(option[i])
             print(f"{menukeys[idx]} : ${option[i]}")
         if len(order) > 1:
-            print("or...")
+            print(" ")
