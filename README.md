@@ -1,4 +1,5 @@
 ## parus-coding-challenge
+## Andrew McManus
 
 Instructions:
 
@@ -9,4 +10,4 @@ Instructions:
 
 3. Enter the file path of the JSON menu you want to use.
 4. Enter your target price.
-5. The program will print your options to the command line.
+5. The program will print your order options to the command line.
