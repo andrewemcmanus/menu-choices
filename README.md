@@ -1,5 +1,5 @@
-## parus-coding-challenge
 ## Andrew McManus
+### Coding Puzzle
 
 Instructions:
 
