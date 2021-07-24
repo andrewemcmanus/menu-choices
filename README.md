@@ -1,5 +1,5 @@
 ## Andrew McManus
-### Coding Puzzle
+### Menu options: a python coding puzzle
 
 Instructions:
 
